@@ -58,7 +58,7 @@ def recommend():
     return render_template('recommend.html',data=data)
 client = OpenAI(
     # This is the default and can be omitted
-    api_key='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',
+    api_key='Your API key ',
 )
 
 @app.route('/bookdetail')
@@ -85,7 +85,7 @@ def generate_response():
     model="gpt-3.5-turbo",
     )
    """
-    genai.configure(api_key="AIzaSyCQhLvMvzpQdsWKbfMJZF8JkaVZpkxBR5w")
+    genai.configure(api_key="Your API Key ")
 
     # Set up the model
     generation_config = {
